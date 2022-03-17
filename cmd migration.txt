@@ -1,0 +1,6 @@
+dotnet tool install dotnet-ef -g
+dotnet-ef
+dir
+cd .\Infrastructure
+dotnet-ef migrations add InitialCreate -s ..\Web\Web.csproj
+dotnet-ef database update -s ..\Web\Web.csproj
